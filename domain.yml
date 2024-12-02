@@ -1,0 +1,81 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- breast_cancer
+- breast_lump
+- breast_lump_consultation
+- consultation
+- deny
+- diagnosis
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- prevention
+- risk_factor
+- support_resources
+- symptoms
+- help_line
+- game_play
+- how_wordle
+- track_health
+- view_calorie
+- frequency_symptom
+- graph_insights
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_stress_info:
+  - text: It is ok
+  utter_breast_info:
+  - text: Breast cancer is when some cells in the breast start growing abnormally and form a lump or tumor. These cells don’t behave like normal cells—they grow quickly and can spread to other parts of the body. It often starts in the milk ducts or glands that make milk. Early detection is key, as it makes the cancer easier to treat.
+  utter_symptoms:
+  - text: Common symptoms of breast cancer include lumps in the breast or underarm, changes in breast shape or size, nipple discharge, and skin changes. Early detection is important—consider regular screenings. Would you like more details on any specific symptoms?
+  utter_risk_factor:
+  - text: Breast cancer risk factors can include age, family history, genetic mutations (like BRCA1/2), lifestyle factors, and hormonal influences. Although risk factors increase likelihood, they don’t guarantee that breast cancer will develop
+  utter_prevention:
+  - text: Some ways to lower breast cancer risk include maintaining a healthy weight, limiting alcohol, staying physically active, and considering regular screenings
+  utter_diagnosis:
+  - text: Breast cancer is often diagnosed through imaging tests like mammograms, ultrasounds, and MRIs, followed by a biopsy to confirm. Early diagnosis is key, so regular check-ups are beneficial
+  utter_support_resources:
+  - text: Support groups can offer emotional comfort and connection with others in similar situations.You can join the 'Recovery' forum to share experiences and connect with others
+  utter_consultation:
+  - text: You can go to the 'Consult' in the bottom navigation bar to book available online doctors
+  utter_breast_lump:
+  - text: I understand. Could you tell me how long you’ve noticed this lump and if it has changed over time?
+  utter_breast_lump_consultation:
+  - text: While some lumps can be harmless, it’s always best to get it checked, especially if it persists. You can go to 'Consult' to book your preferred doctor for online consultation
+  utter_help:
+  - text: What can i help you for today?
+  utter_game:
+  - text: We have quiz and wordle game! Play and Win Now to earn badges
+  utter_wordle:
+  - text: Click Play Game in the app, select Wordle on the game page. Don’t worry, it's just five letters—and it gives you hints!
+  utter_track:
+  - text: To track your activity health, you can go to 'Activity', you can track your daily sleeps, daily symptom, and also water and meals
+  utter_calorie:
+  - text: You can view your total calorie on the Insight Page. To do so, you may click on 'Activity' Page, at the bottom of the page, you can click 'View insights'
+  utter_frequency_symptom:
+  - text: You can find the frequency of your symptom on the Insight Page. To do so, you may click on 'Activity' Page, at the bottom of the page, you can click 'View insights'
+  utter_insights:
+  - text: You can view the summary of your health on the Insight Page. To do so, you may click on 'Activity' Page, at the bottom of the page, you can click 'View insights'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_greet
+- utter_breast_lump_consultation
+- utter_breast_lump
+- utter_breast_info

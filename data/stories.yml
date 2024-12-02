@@ -1,0 +1,124 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: breast health
+  steps:
+  - intent: breast_cancer
+  - action: utter_breast_info
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: breast_cancer
+  - action: utter_breast_info
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: breast_lump
+#   - action: utter_breast_lump
+#   - intent: action_listen
+#   - action: utter_breast_lump_consultation
+  
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: breast_lump
+  - action: utter_breast_lump
+  - intent: breast_lump_consultation
+  - action: utter_breast_lump_consultation
+
+- story: risk_factor_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: risk_factor
+  - action: utter_risk_factor
+
+- story: support_resources_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: support_resources
+  - action: utter_support_resources
+
+- story: breast_cancer_whole
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: breast_cancer
+  - action: utter_breast_info
+  - intent: symptoms
+  - action: utter_symptoms
+  - intent: risk_factor
+  - action: utter_risk_factor
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: consult_action
+  steps:
+  - intent: consultation
+  - action: utter_consultation
+
+- story: help_action
+  steps:
+  - intent: help_line
+  - action: utter_help
+
+- story: game_action
+  steps:
+  - intent: game_play
+  - action: utter_game
+
+- story: how_wordle
+  steps:
+  - intent: how_wordle
+  - action: utter_wordle
+
+- story: track_my_health
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_health
+  - action: utter_track
+  - intent: view_calorie
+  - action: utter_calorie
+  - intent: frequency_symptom
+  - action: utter_frequency_symptom
+
+- story: graph_view
+  steps: 
+  - intent: graph_insights
+  - action: utter_insights

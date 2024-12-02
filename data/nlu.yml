@@ -1,0 +1,174 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: breast_cancer
+  examples: |
+    - what is breast cancer?
+    - how to detect breast cancer?
+    - does breast cancer kill?
+    - what is breast cancer
+- intent: symptoms
+  examples: |
+    - what are the symptom of breast cancer?
+    - what are the early sign to look out for breast cancer?
+    - what is the early sign?
+- intent: risk_factor
+  examples: |
+    - what are the risk factor for breast cancer?
+    - risk factor?
+    - can family history increase my risk?
+    - risk factors
+- intent: prevention
+  examples: |
+    - how can i lower my risk of breast cancer?
+    - can i prevent breast cancer?
+- intent: diagnosis
+  examples: |
+    - how is breast cancer diagnosis?
+    - diagnosis?
+    - breast cancer test
+    - diagnose breast cancer?
+- intent: support_resources
+  examples: |
+    - support group?
+    - mental health support
+    - are there support groups for breast cancer patients?
+- intent: consultation
+  examples: |
+    - consultation
+    - appointment
+    - i would like to refer to a doctor
+    - doctor
+- intent: breast_lump
+  examples: |
+    - breast lump
+    - I notice a breast lump
+- intent: breast_lump_consultation
+  examples: |
+    - i felt it about a week ago and it seems to be the same size
+- intent: consultation_feature
+    - book
+- intent: help_line
+  examples: |
+    - help
+    - tolong
+- intent: game_play
+  examples: |
+    - game
+    - main
+    - play
+- intent: how_wordle
+  examples: |
+    - how to play wordle?
+    - wordle
+- intent : track_health
+  examples: |
+    - how to track my health?
+    - can i track my sleep?
+    - can i track my medicine?
+    - can i track my exercise?
+    - can i track my meals?
+    - track
+    - health tracker
+- intent: view_calorie
+  examples: |
+    - calorie
+    - view calorie
+    - how to see my total calorie
+- intent: frequency_symptom
+  examples: |
+    - where to find my symptom
+    - frequency symptom
+    - symptom where
+- intent: graph_insights
+  examples: |
+    - insights
+    - graph
+    - where is insight
+    - where is graph
+    - where is chart
+    - how to view the insights
+    - how to view the graph
+    - how to view the summary of health
+    - summary
